@@ -7,6 +7,10 @@ function App() {
   const [items, setItems] = useState(itemData);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  function onItemFormSubmit(newItem) {
+    setItems(newItem);
+  }
+
   function handleDarkModeClick() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
